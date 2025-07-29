@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>DemoDemoDemo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="config.js"></script>
+</head>
+<body>
+    <!-- Floating hearts and sparkles background -->
+    <div class="floating-elements">
+        <div class="heart" style="--delay: 0s; --duration: 4s;">💖</div>
+        <div class="heart" style="--delay: 1s; --duration: 5s;">💕</div>
+        <div class="heart" style="--delay: 2s; --duration: 3s;">💗</div>
+        <div class="sparkle" style="--delay: 0.5s; --duration: 6s;">✨</div>
+        <div class="sparkle" style="--delay: 1.5s; --duration: 4s;">⭐</div>
+        <div class="sparkle" style="--delay: 2.5s; --duration: 5s;">💫</div>
+        <div class="heart" style="--delay: 3s; --duration: 4.5s;">💝</div>
+        <div class="sparkle" style="--delay: 3.5s; --duration: 3.5s;">✨</div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">💕 FLAMES & Love Calculator 💕</h1>
+            <p class="subtitle">Discover your romantic destiny!</p>
+        </header>
+
+        <div class="character-container">
+            <div class="character boy">
+                <div class="character-emoji">👦</div>
+                <div class="speech-bubble">Hi there!</div>
+            </div>
+            <div class="character girl">
+                <div class="character-emoji">👧</div>
+                <div class="speech-bubble">Let's find out!</div>
+            </div>
+        </div>
+
+        <div class="calculator-card">
+            <form id="loveForm" class="love-form">
+                <div class="input-group">
+                    <label for="name1">Your Name</label>
+                    <input type="text" id="name1" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="name2">Their Name</label>
+                    <input type="text" id="name2" placeholder="Enter their name" required>
+                </div>
+                
+                <button type="submit" class="calculate-btn">
+                    <span class="btn-text">Calculate Love! 💖</span>
+                </button>
+            </form>
+
+            <div id="results" class="results hidden">
+                <div class="result-card">
+                    <h3>Love Percentage</h3>
+                    <div class="percentage-circle">
+                        <span id="percentage">0%</span>
+                    </div>
+                    <div class="percentage-bar">
+                        <div id="percentageProgress" class="percentage-fill"></div>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <h3>FLAMES Result</h3>
+                    <div class="flames-result">
+                        <div id="flamesLetter" class="flames-letter">F</div>
+                        <div id="flamesText" class="flames-text">Friends</div>
+                    </div>
+                    <div id="flamesDescription" class="flames-description"></div>
+                </div>
+
+                <button id="resetBtn" class="reset-btn">Try Again! 💕</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
